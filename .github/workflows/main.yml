@@ -1,0 +1,16 @@
+name: OSS PR Monitor
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, edited, reopened]
+    paths:
+      - 'ci/*'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: SilverC/oss-pr-monitor@v0.0.1-rc
+      with:
+        # Optional. Post a issue comment just before closing a pull request.
+        comment: "You may not change the CI workflow."
