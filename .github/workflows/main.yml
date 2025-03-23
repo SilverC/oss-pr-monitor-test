@@ -10,7 +10,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-    - uses: SilverC/oss-pr-monitor@v0.0.1-rc3
+    - uses: SilverC/oss-pr-monitor@v0.0.1-rc4
       with:
         # Optional. Post a issue comment just before closing a pull request.
         comment: "You may not change the CI workflow."
